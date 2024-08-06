@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="libs/bootstrap_3.4.1/css/bootstrap.min.css">
+    <style>
+        .banner {
+            background-color: #003366; /* Dark blue color */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .accd-box {
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            float: left;
+            margin: 5px;
+        }
+        .accd-box2 {
+            padding: 0px 0px 20px 0px;
+            border-radius: 5px;
+            font-size: 11px;
+            margin: 5px;
+        }
+        .accd-title {
+            background-color: rgb(0, 102, 82);
+            color: white;
+            height: auto;
+            line-height: 20px;
+            padding: 10px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            font-size: 16px;
+        }
+        #login-links {
+            text-align: center;
+        }
+        .box-content {
+            padding: 10px;
+            background: #eee;
+            margin-bottom: 25px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Banners -->
+    <div class="banner">
+        Alamo Colleges
+    </div>
+    <div class="banner">
+        San Antonio College
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="accd-box2">
+                    <div class="row">
+                        <div class="col-12 align-self-start box-content" style="border-top-right-radius: 5px; border-top-left-radius: 5px;">
+                            <h2 style="font-size: 16px !important; font-weight: bold !important;">Former Students and Employees Log-in To ACES Instructions</h2>
+                            <ol style="text-align:left;font-size:11px; margin-bottom: 0px !important;">
+                                <li>If you remember your User ID and password, log-in to ACES in the spaces indicated in the Secure Access Box.</li>
+                                <li>If you still cannot log-in to ACES, call the Help Desk at 210-485-0555.</li>
+                                <li>Once you have signed in to ACES, click the link for Web Services located on the bottom left-hand side of the Home Tab page.</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="accd-title">Welcome to ACES</div>
+                            <div class="box-content">
+                                ACES is a secure portal that provides students, staff, and faculty with access to various applications using a single sign-on. As an ACES user, you will have access to register for classes, financial aid information, email, library resources, and online courses. ACES will also provide you with the latest information of events and important news taking place within your college.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="accd-title">ACES Login Information</div>
+                            <div class="box-content" id="login-links">
+                                <p style="color:red;">
+                                    <b>First-time users only:<br>
+                                    Your default password will be the first two letters of your last name, IN CAPS, followed by your birthdate in MMDDYY format</b>
+                                </p>
+                                <!-- Begin username and password input section -->
+                                <form onsubmit="return validateLogin()">
+                                    <div class="form-group">
+                                        <label for="username">Username</label>
+                                        <input type="text" id="username" name="username" class="form-control" placeholder="Enter Username" value="Passim">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" value="Poppu123@">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary">Login</button>
+                                    </div>
+                                </form>
+                                <!-- End username and password input section -->
+                                <p>To setup security questions click <a target="_blank" href="https://login.alamo.edu/user-portal/security">here</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="accd-title">Important Numbers</div>
+                            <div class="box-content">
+                                <p><strong>Helpdesk</strong></p>
+                                <p>NLC: 210-486-5777<br>
+                                    NVC: 210-486-4777<br>
+                                    PAC: 210-486-3777<br>
+                                    SAC: 210-486-0777<br>
+                                    SPC: 210-486-2777<br>
+                                    District: 210-485-0555
+                                </p>
+                                <p><strong>Admissions and Records / Enrollment Services</strong></p>
+                                <p>NLC 210-486-5401<br>
+                                    NVC 210-486-4700<br>
+                                    PAC 210-486-3700<br>
+                                    SAC 210-486-0200<br>
+                                    SPC 210-486-2700
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="accd-title">Useful Information</div>
+                            <div class="box-content">
+                                <p><strong>Registration</strong></p>
+                                <p><a href="http://www.alamo.edu/calendars/" target="_blank">Registration and Payment Calendar</a></p>
+                                <p><strong>Canvas Information</strong></p>
+                                <p><a href="https://alamo.instructure.com/courses/293886" title="Email Usage Policies" target="_blank">Quick Guide</a></p>
+                                <p><a href="https://alamo.instructure.com/courses/293886/pages/college-resources-and-contacts" title="Campus Crime Alerts" target="_blank">College Resources</a></p>
+                                <p><strong>Weather Line</strong></p>
+                                <p>210-485-0189</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="libs/jquery_3.6.0/jquery-3.6.0.js"></script>
+    <script src="libs/bootstrap_3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        function validateLogin() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'Passim' && password === 'Poppu123@') {
+                window.location.href = 'dashboard.html';
+                return false; // Prevent form submission
+            } else {
+                alert('Invalid username or password');
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

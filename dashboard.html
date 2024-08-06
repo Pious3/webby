@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="libs/bootstrap_3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .red-banner {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .sidebar {
+            width: 200px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            color: white;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li a i {
+            margin-right: 10px;
+        }
+        .content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .header-image img {
+            width: 100%;
+            height: auto;
+        }
+        .dashboard {
+            background-color: gray;
+            color: white;
+            padding: 20px;
+        }
+        .grade-container {
+            display: flex;
+            align-items: center;
+        }
+        .grade-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .main-content {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Red Banner -->
+    <div class="red-banner">
+        Welcome to ITSC 1305-003 Introduction to PC Operating Systems
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Summer 2024</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="#"><i class="fas fa-book"></i><span>Modules</span></a></li>
+            <li><a href="#"><i class="fas fa-laptop"></i><span>Brainfuse Online Tutoring</span></a></li>
+            <li><a href="#"><i class="fas fa-poll"></i><span>Student Survey</span></a></li>
+            <li><a href="#"><i class="fas fa-book-reader"></i><span>AlamoBOOKS+ Digital Course Materials</span></a></li>
+            <li><a href="#"><i class="fas fa-file-alt"></i><span>Course Syllabus</span></a></li>
+            <li><a href="#"><i class="fas fa-link"></i><span>Additional Resources</span></a></li>
+            <li><a href="grades.html"><i class="fas fa-graduation-cap"></i><span>Grades</span></a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Header Image -->
+        <div class="header-image">
+            <img src="images/1100x330-SAC-cidilab-banner.jpg" alt="CIDI Lab Banner">
+        </div>
+
+        <!-- Grey Dashboard -->
+        <div class="dashboard">
+            <h2>Grades</h2>
+            <!-- Grade Icon with Link -->
+            <div class="grade-container">
+                <i class="fas fa-graduation-cap grade-icon"></i> <!-- Grade Icon -->
+                <span class="grade-text">Grades</span>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h2>Welcome to ITSC 1305-003 Introduction to PC Operating Systems</h2>
+            <div>
+                <p><strong>Kim Muschalek</strong><br>
+                   Instructor<br>
+                   <a href="mailto:kmuschalek@alamo.edu">kmuschalek@alamo.edu</a><br>
+                   By appointment via Zoom<br>
+                   <a href="https://alamo.zoom.us/j/4590810768">Link to Zoom Office Hours</a><br><br>
+
+                   Response Time<br>
+                   Response to emails within 24 hours<br>
+                   Feedback on assignments within 48 hours<br>
+                   Responses to discussion posts within 48 hours<br>
+                   100% effort will be given to assist with inquiries and address all concerns in a timely manner.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
